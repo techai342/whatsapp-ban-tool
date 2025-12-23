@@ -34,4 +34,4 @@ const ProgressSteps = ({ currentSection }) => {
   )
 }
 
-export default ProgressStepsProgressSteps.jsx
+export default ProgressSteps.jsx
