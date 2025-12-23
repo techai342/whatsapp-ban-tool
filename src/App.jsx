@@ -5,7 +5,7 @@ import FormInput from './components/FormInput'
 import ProgressSteps from './components/ProgressSteps'
 import ReviewSection from './components/ReviewSection'
 import SuccessMessage from './components/SuccessMessage'
-import './App.css'
+
 
 function App() {
   const [currentSection, setCurrentSection] = useState(1)
