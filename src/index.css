@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f0f2f5;
+  font-family: 'Inter', sans-serif;
+}
+
+@layer components {
+  .whatsapp-green {
+    @apply bg-[#25D366];
+  }
+  
+  .whatsapp-dark-green {
+    @apply bg-[#075E54];
+  }
+  
+  .glass-card {
+    @apply bg-white/100 rounded-3xl shadow-2xl;
+  }
+  
+  .pulse {
+    animation: pulse-animation 2s infinite;
+  }
+  
+  .step-active {
+    @apply bg-[#25D366] text-white;
+  }
+  
+  .step-completed {
+    @apply bg-[#075E54] text-white;
+  }
+  
+  .step-inactive {
+    @apply bg-gray-200 text-gray-500;
+  }
+  
+  .email-option {
+    @apply transition-all duration-300 cursor-pointer;
+  }
+  
+  .email-option:hover {
+    @apply transform -translate-y-1;
+  }
+  
+  .email-option.selected {
+    @apply border-[#25D366] shadow-lg;
+  }
+}
+
+@keyframes pulse-animation {
+  0% { box-shadow: 0 0 0 0px rgba(37, 211, 102, 0.4); }
+  100% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+}
